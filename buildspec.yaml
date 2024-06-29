@@ -11,7 +11,6 @@ phases:
       java: corretto11
     commands:
       - yum update -y
-      - yum install -y ibus-kkc vlgothic-* glibc-locale-source glibc-langpack-en
 
   pre_build:
     commands:
