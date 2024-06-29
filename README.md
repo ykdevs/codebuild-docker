@@ -25,6 +25,16 @@ aws cloudformation create-stack --stack-name ${STACK_NAME} \
   --capabilities CAPABILITY_NAMED_IAM
 ```
 
+更新
+
+```shell
+aws cloudformation update-stack --stack-name ${STACK_NAME} \
+  --template-body file://./cloudformation-templates/${TEMPLATE} \
+  --parameters "${PARAMETERS}" \
+  --capabilities CAPABILITY_NAMED_IAM
+```
+
+
 削除
 
 ```shell
