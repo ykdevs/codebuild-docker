@@ -4,6 +4,6 @@ services:
       context: .
     platform: linux/x86_64
     ports:
-      - "${DB_PORT:-3306}:3306"
+      - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=root
